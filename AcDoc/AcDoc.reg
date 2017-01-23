@@ -1,0 +1,30 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+HKEY_CLASSES_ROOT\.acdoc = AcDoc.Document
+HKEY_CLASSES_ROOT\AcDoc.Document\shell\open\command = ACDOC.EXE %1
+HKEY_CLASSES_ROOT\AcDoc.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\AcDoc.Document\shell\open\ddeexec\application = ACDOC
+    ; note: the application is optional
+    ;  (it defaults to the app name in "command")
+
+HKEY_CLASSES_ROOT\AcDoc.Document = AcDoc Document
+HKEY_CLASSES_ROOT\AcDoc.Document\protocol\StdFileEditing\server = ACDOC.EXE
+HKEY_CLASSES_ROOT\AcDoc.Document\protocol\StdFileEditing\verb\0 = &Edit
+HKEY_CLASSES_ROOT\AcDoc.Document\Insertable =
+HKEY_CLASSES_ROOT\AcDoc.Document\CLSID = {176DB883-03BB-11D2-B890-F5CF46C0F611}
+
+HKEY_CLASSES_ROOT\CLSID\{176DB883-03BB-11D2-B890-F5CF46C0F611} = AcDoc Document
+HKEY_CLASSES_ROOT\CLSID\{176DB883-03BB-11D2-B890-F5CF46C0F611}\DefaultIcon = ACDOC.EXE,1
+HKEY_CLASSES_ROOT\CLSID\{176DB883-03BB-11D2-B890-F5CF46C0F611}\LocalServer32 = ACDOC.EXE
+HKEY_CLASSES_ROOT\CLSID\{176DB883-03BB-11D2-B890-F5CF46C0F611}\ProgId = AcDoc.Document
+HKEY_CLASSES_ROOT\CLSID\{176DB883-03BB-11D2-B890-F5CF46C0F611}\MiscStatus = 32
+HKEY_CLASSES_ROOT\CLSID\{176DB883-03BB-11D2-B890-F5CF46C0F611}\AuxUserType\3 = AcDoc
+HKEY_CLASSES_ROOT\CLSID\{176DB883-03BB-11D2-B890-F5CF46C0F611}\AuxUserType\2 = AcDoc
+HKEY_CLASSES_ROOT\CLSID\{176DB883-03BB-11D2-B890-F5CF46C0F611}\Insertable = 
+HKEY_CLASSES_ROOT\CLSID\{176DB883-03BB-11D2-B890-F5CF46C0F611}\verb\1 = &Open,0,2
+HKEY_CLASSES_ROOT\CLSID\{176DB883-03BB-11D2-B890-F5CF46C0F611}\verb\0 = &Edit,0,2
+HKEY_CLASSES_ROOT\CLSID\{176DB883-03BB-11D2-B890-F5CF46C0F611}\InprocHandler32 = ole32.dll

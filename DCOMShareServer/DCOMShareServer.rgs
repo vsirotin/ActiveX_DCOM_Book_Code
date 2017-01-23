@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{0233BB02-0FA9-11D2-B890-B449FDDB065F} = s 'DCOMShareServer'
+		'DCOMShareServer.EXE'
+		{
+			val AppID = s {0233BB02-0FA9-11D2-B890-B449FDDB065F}
+		}
+	}
+}

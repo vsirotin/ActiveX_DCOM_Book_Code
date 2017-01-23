@@ -1,0 +1,35 @@
+--------------------Configuration: DayOrder - Win32 Debug--------------------
+Begining build with project "C:\Vcpp\AxD\P7\DayOrder\DayOrder.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/DayOrder.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x407 /fo"Debug/DayOrder.res" /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/DayOrder.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DayOrder.pdb" /debug /machine:I386 /out:"Debug/DayOrder.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\WINDOWS\TEMP\RSPF321.TMP" with contents </nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/DayOrder.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\P7\DayOrder\DayOrderView.cpp"
+>
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPF321.TMP" 
+Creating temp file "C:\WINDOWS\TEMP\RSPF322.TMP" with contents </nologo /subsystem:windows /incremental:yes /pdb:"Debug/DayOrder.pdb" /debug /machine:I386 /out:"Debug/DayOrder.exe" /pdbtype:sept 
+.\Debug\calendar.obj
+.\Debug\DayOrder.obj
+.\Debug\DayOrderDoc.obj
+.\Debug\DayOrderView.obj
+.\Debug\font.obj
+.\Debug\intcircuitctl.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\DayOrder.res>
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPF322.TMP" 
+Compiling...
+DayOrderView.cpp
+Linking...
+
+
+
+DayOrder.exe - 0 error(s), 0 warning(s)

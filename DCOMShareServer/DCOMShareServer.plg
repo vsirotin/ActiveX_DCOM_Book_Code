@@ -1,0 +1,32 @@
+--------------------Configuration: DCOMShareServer - Win32 Debug--------------------
+Begining build with project "C:\Vcpp\AxD\P9\DCOMShareServer\DCOMShareServer.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MTd /W3 /Gm /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WIN32_DCOM" /Fp"Debug/DCOMShareServer.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x407 /fo"Debug/DCOMShareServer.res" /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/DCOMShareServer.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/DCOMShareServer.pdb" /debug /machine:I386 /out:"Debug/DCOMShareServer.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\WINDOWS\TEMP\RSP113.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/DCOMShareServer.pdb" /debug /machine:I386 /out:"Debug/DCOMShareServer.exe" /pdbtype:sept 
+.\Debug\DCOMShareObj.obj
+.\Debug\DCOMShareServer.obj
+.\Debug\StdAfx.obj
+.\Debug\DCOMShareServer.res>
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP113.TMP" 
+Creating temp file "C:\WINDOWS\TEMP\RSP0114.BAT" with contents <@echo off
+".\Debug\DCOMShareServer.exe" /RegServer
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+echo Server registration done!
+>
+Creating command line "C:\WINDOWS\TEMP\RSP0114.BAT" 
+Linking...
+Performing registration
+Server registration done!
+
+
+
+DCOMShareServer.exe - 0 error(s), 0 warning(s)

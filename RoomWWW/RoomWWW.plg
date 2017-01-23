@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RoomWWW - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x407 /fo"Debug/RoomWWW.res" /d "_DEBUG" /d "_AFXDLL" "C:\Vcpp\AxD\P7\RoomWWW\RoomWWW.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP4040.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/RoomWWW.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\P7\RoomWWW\font.cpp"
+"C:\Vcpp\AxD\P7\RoomWWW\MainFrm.cpp"
+"C:\Vcpp\AxD\P7\RoomWWW\RoomWWW.cpp"
+"C:\Vcpp\AxD\P7\RoomWWW\RoomWWWDoc.cpp"
+"C:\Vcpp\AxD\P7\RoomWWW\RoomWWWView.cpp"
+"C:\Vcpp\AxD\P7\RoomWWW\teamroom.cpp"
+"C:\Vcpp\AxD\P7\RoomWWW\webbrowser2.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP4040.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP4041.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/RoomWWW.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\P7\RoomWWW\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP4041.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP4042.TMP" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/RoomWWW.pdb" /debug /machine:I386 /out:"Debug/RoomWWW.exe" /pdbtype:sept 
+.\Debug\font.obj
+.\Debug\MainFrm.obj
+.\Debug\RoomWWW.obj
+.\Debug\RoomWWWDoc.obj
+.\Debug\RoomWWWView.obj
+.\Debug\StdAfx.obj
+.\Debug\teamroom.obj
+.\Debug\webbrowser2.obj
+.\Debug\RoomWWW.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP4042.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+font.cpp
+MainFrm.cpp
+RoomWWW.cpp
+RoomWWWDoc.cpp
+RoomWWWView.cpp
+teamroom.cpp
+webbrowser2.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+RoomWWW.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

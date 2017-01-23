@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AxDMFCControlFirst - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "Debug/AxDMFCControlFirst.tlb" /mktyplib203 /o "NUL" /win32 "C:\Vcpp\AxD\Kap5\AxDMFCControlFirst\AxDMFCControlFirst.odl""
+Creating command line "rc.exe /l 0x407 /fo"Debug/AxDMFCControlFirst.res" /i "Debug" /d "_DEBUG" /d "_AFXDLL" "C:\Vcpp\AxD\Kap5\AxDMFCControlFirst\AxDMFCControlFirst.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPE153.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fp"Debug/AxDMFCControlFirst.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\Kap5\AxDMFCControlFirst\AxDMFCControlFirst.cpp"
+"C:\Vcpp\AxD\Kap5\AxDMFCControlFirst\AxDMFCControlFirstCtl.cpp"
+"C:\Vcpp\AxD\Kap5\AxDMFCControlFirst\AxDMFCControlFirstPpg.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPE153.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPE154.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fp"Debug/AxDMFCControlFirst.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\Kap5\AxDMFCControlFirst\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPE154.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPE155.TMP" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/AxDMFCControlFirst.pdb" /debug /machine:I386 /def:".\AxDMFCControlFirst.def" /out:"Debug/AxDMFCControlFirst.ocx" /implib:"Debug/AxDMFCControlFirst.lib" /pdbtype:sept 
+.\Debug\AxDMFCControlFirst.obj
+.\Debug\AxDMFCControlFirstCtl.obj
+.\Debug\AxDMFCControlFirstPpg.obj
+.\Debug\StdAfx.obj
+.\Debug\AxDMFCControlFirst.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPE155.TMP"
+Creating temporary file "C:\WINDOWS\TEMP\RSPE156.BAT" with contents
+[
+@echo off
+regsvr32 /s /c ".\Debug\AxDMFCControlFirst.ocx"
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+]
+Creating command line "C:\WINDOWS\TEMP\RSPE156.BAT"
+Creating Type Library...
+AxDMFCControlFirst.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AxDMFCControlFirst.cpp
+AxDMFCControlFirstCtl.cpp
+AxDMFCControlFirstPpg.cpp
+Generating Code...
+Linking...
+   Creating library Debug/AxDMFCControlFirst.lib and object Debug/AxDMFCControlFirst.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+AxDMFCControlFirst.ocx - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

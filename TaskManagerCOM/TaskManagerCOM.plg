@@ -1,0 +1,29 @@
+--------------------Configuration: TaskManagerCOM - Win32 Debug--------------------
+Begining build with project "C:\Vcpp\AxD\Kap3\TaskManagerCOM\TaskManagerCOM.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/TaskManagerCOM.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x407 /fo"Debug/TaskManagerCOM.res" /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/TaskManagerCOM.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /incremental:yes /pdb:"Debug/TaskManagerCOM.pdb" /debug /machine:I386 /out:"Debug/TaskManagerCOM.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x407 /fo"Debug/TaskManagerCOM.res" /d "_DEBUG" "C:\Vcpp\AxD\Kap3\TaskManagerCOM\TaskManagerCOM.rc"" 
+Creating temp file "C:\WINDOWS\TEMP\RSPC3B6.TMP" with contents </nologo /subsystem:windows /incremental:yes /pdb:"Debug/TaskManagerCOM.pdb" /debug /machine:I386 /out:"Debug/TaskManagerCOM.exe" /pdbtype:sept 
+.\Debug\MainFrm.obj
+.\Debug\ReasonDlg1.obj
+.\Debug\StdAfx.obj
+.\Debug\TaskManagerCOM.obj
+.\Debug\TaskManagerCOMDoc.obj
+.\Debug\TaskManagerCOMView.obj
+.\Debug\TaskManagerCOM.res>
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPC3B6.TMP" 
+Compiling resources...
+Linking...
+
+
+
+TaskManagerCOM.exe - 0 error(s), 0 warning(s)

@@ -1,0 +1,13 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\DCOMSpaceInfo.Document = DCOMSp Document
+HKEY_CLASSES_ROOT\DCOMSpaceInfo.Document\CLSID = {EEB67423-087B-11D2-B890-808E7145DC12}
+
+HKEY_CLASSES_ROOT\CLSID\{EEB67423-087B-11D2-B890-808E7145DC12} = DCOMSp Document
+HKEY_CLASSES_ROOT\CLSID\{EEB67423-087B-11D2-B890-808E7145DC12}\ProgId = DCOMSpaceInfo.Document
+HKEY_CLASSES_ROOT\CLSID\{EEB67423-087B-11D2-B890-808E7145DC12}\LocalServer32 = DCOMSPACEINFO.EXE

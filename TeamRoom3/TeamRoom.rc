@@ -1,0 +1,268 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""TeamRoom.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "vgs\0"
+            VALUE "FileDescription", "TeamRoom ActiveX Control Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TEAMROOM\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TEAMROOM.OCX\0"
+            VALUE "ProductName", "TeamRoom ActiveX Control Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ABOUTDLL            ICON    DISCARDABLE     "TeamRoom.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TEAMROOM            BITMAP  DISCARDABLE     "TeamRoomCtl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX_TEAMROOM DIALOG DISCARDABLE  34, 22, 260, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About TeamRoom Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,20,20
+    LTEXT           "TeamRoom Control, Version 1.0",IDC_STATIC,40,10,170,8
+    LTEXT           "Copyright (C) 1998, vgs",IDC_STATIC,40,25,170,8
+    DEFPUSHBUTTON   "OK",IDOK,221,7,32,14,WS_GROUP
+END
+
+IDD_PROPPAGE_TEAMROOM DIALOG DISCARDABLE  0, 0, 250, 62
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Anzahl der Zimmer:",IDC_STATIC,7,7,70,16
+    EDITTEXT        IDC_ROOM_COUNT,96,7,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Fläche",IDC_STATIC,7,26,70,16
+    EDITTEXT        IDC_ROOM_AREA,96,26,40,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_DIALOG_ORDER DIALOG DISCARDABLE  0, 0, 186, 247
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bestellungen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,10,226,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,124,226,50,14
+    LTEXT           "Name",IDC_STATIC,10,17,20,8
+    EDITTEXT        IDC_NAME,60,17,114,14,ES_AUTOHSCROLL
+    LTEXT           "Anzahl",IDC_STATIC,10,41,22,8
+    EDITTEXT        IDC_COUNT,60,41,33,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Summe",IDC_STATIC,10,65,24,8
+    EDITTEXT        IDC_SUM,60,65,34,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_INFO_ALL,10,84,164,54,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    LTEXT           "Preis",IDC_STATIC,10,159,16,8
+    EDITTEXT        IDC_PRICE,60,159,34,14,ES_AUTOHSCROLL
+    LTEXT           "Info:",IDC_STATIC,10,170,15,8
+    EDITTEXT        IDC_INFO,10,191,164,28,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    GROUPBOX        "",IDC_STATIC,3,7,177,136
+    GROUPBOX        "Neue Bestellung:",IDC_STATIC,4,146,177,78
+END
+
+IDD_PROPPAGE_TEAMROOM1 DIALOG DISCARDABLE  0, 0, 250, 110
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Team (Name):",IDC_STATIC,16,27,49,16
+    LTEXT           "Farbe:",IDC_STATIC,145,17,25,16
+    PUSHBUTTON      "Farbe ändern",IDC_CHANGE_CRL,176,34,52,15
+    COMBOBOX        IDC_TEAMS,65,27,68,67,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,7,7,229,46
+    GROUPBOX        "Bestellungen",IDC_STATIC,7,56,229,40
+    LTEXT           "Anzahl:",IDC_STATIC,17,71,24,8
+    EDITTEXT        IDC_ORD_COUNT,66,72,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Summe:",IDC_STATIC,127,72,26,8
+    EDITTEXT        IDC_ORD_SUM,176,73,40,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX_TEAMROOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PROPPAGE_TEAMROOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG_ORDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 174
+        VERTGUIDE, 60
+        VERTGUIDE, 94
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+        HORZGUIDE, 24
+        HORZGUIDE, 30
+        HORZGUIDE, 48
+        HORZGUIDE, 54
+        HORZGUIDE, 74
+        HORZGUIDE, 84
+        HORZGUIDE, 159
+    END
+
+    IDD_PROPPAGE_TEAMROOM1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        VERTGUIDE, 66
+        VERTGUIDE, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+        HORZGUIDE, 27
+        HORZGUIDE, 72
+        HORZGUIDE, 90
+        HORZGUIDE, 96
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TEAMROOM            "TeamRoom Control"
+    IDS_TEAMROOM_PPG        "TeamRoom Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TEAMROOM_PPG_CAPTION "Allgemeine"
+    IDD_PROPPAGE_TEAMROOM1  " "
+    IDD_PROPPAGE_TEAMROOM1_CAPTION "Details"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "TeamRoom.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

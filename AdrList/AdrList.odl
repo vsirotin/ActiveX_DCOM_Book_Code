@@ -1,0 +1,47 @@
+// AdrList.odl : type library source for AdrList.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (AdrList.tlb).
+
+[ uuid(2D81BA44-C815-11D1-B890-EF240A666978), version(1.0),
+helpstring("AxD Kapitel 4 Test Automatisierungsserver") //Diese Zeile muß manuell eingefügt werden
+]
+library AdrList
+{
+	importlib("stdole32.tlb");
+	
+
+	//  Primary dispatch interface for CAdrListDoc
+	
+	[ uuid(2D81BA45-C815-11D1-B890-EF240A666978) ]
+	dispinterface IAdrList
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CAdrListDoc)
+			[id(1)] BSTR Name;
+			[id(3)] BSTR Strasse;
+			[id(2)] BSTR PLZ;
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CAdrListDoc)
+			[id(4)] boolean Next();
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CAdrListDoc
+	
+	[ uuid(2D81BA43-C815-11D1-B890-EF240A666978) ]
+	coclass Document
+	{
+		[default] dispinterface IAdrList;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

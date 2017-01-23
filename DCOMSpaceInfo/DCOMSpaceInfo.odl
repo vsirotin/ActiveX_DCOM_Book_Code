@@ -1,0 +1,71 @@
+// DCOMSpaceInfo.odl : type library source for DCOMSpaceInfo.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (DCOMSpaceInfo.tlb).
+
+[ uuid(EEB67424-087B-11D2-B890-808E7145DC12), version(1.0) ]
+library DCOMSpaceInfo
+{
+	importlib("stdole32.tlb");
+	
+
+	//  Primary dispatch interface for CDCOMSpaceInfoDoc
+	
+	[ uuid(EEB67425-087B-11D2-B890-808E7145DC12) ]
+	dispinterface IDCOMSpaceInfo
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CDCOMSpaceInfoDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CDCOMSpaceInfoDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CDCOMSpaceInfoDoc
+	
+	[ uuid(EEB67423-087B-11D2-B890-808E7145DC12) ]
+	coclass Document
+	{
+		[default] dispinterface IDCOMSpaceInfo;
+	};
+
+
+	//  Primary dispatch interface for CConnector
+	
+	[ uuid(EEB6743C-087B-11D2-B890-808E7145DC12) ]
+	dispinterface IConnector
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CConnector)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CConnector)
+			[id(1)] long GetPhysSpaceTotal();
+			[id(2)] float GetPhysSpaceAvail();
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CConnector
+
+	[ uuid(EEB6743D-087B-11D2-B890-808E7145DC12) ]
+	coclass Connector
+	{
+		[default] dispinterface IConnector;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

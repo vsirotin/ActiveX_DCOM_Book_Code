@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TeamRoom - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSPF336.TMP" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/TeamRoom.pdb" /debug /machine:I386 /def:".\TeamRoom.def" /out:"Debug/TeamRoom.ocx" /implib:"Debug/TeamRoom.lib" /pdbtype:sept 
+.\Debug\CompCat.obj
+.\Debug\OrderDlg.obj
+.\Debug\Room.obj
+.\Debug\StdAfx.obj
+.\Debug\TeamRoom.obj
+.\Debug\TeamRoomCtl.obj
+.\Debug\TeamRoomDetails.obj
+.\Debug\TeamRoomPpg.obj
+.\Debug\TeamRoom.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPF336.TMP"
+Creating temporary file "C:\WINDOWS\TEMP\RSPF337.BAT" with contents
+[
+@echo off
+regsvr32 /s /c ".\Debug\TeamRoom.ocx"
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+]
+Creating command line "C:\WINDOWS\TEMP\RSPF337.BAT"
+Linking...
+   Creating library Debug/TeamRoom.lib and object Debug/TeamRoom.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in .\Debug\TeamRoom.ocx succeeded.
+
+
+
+
+<h3>Results</h3>
+TeamRoom.ocx - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

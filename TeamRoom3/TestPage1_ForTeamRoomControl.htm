@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Developer Studio">
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+<TITLE>Document Title</TITLE>
+</HEAD>
+<BODY>
+
+<!-- Insert HTML here -->
+
+<OBJECT 
+CLASSID="clsid:D2DF0E66-DC6B-11D1-B890-83B4B7F80022"
+ID=TeamRoom
+WIDTH = 400 HEIGHT = 300
+>
+</OBJECT>
+
+<P>
+<INPUT TYPE=BUTTON 
+VALUE = "Gesamte Information über Bestellungen" 
+NAME="BtnInfo"
+ONCLICK = "alert(TeamRoom.InfoOrderAll);"
+LANGUAGE="JavaScript" >
+</P>
+
+<P>
+<INPUT TYPE=BUTTON 
+VALUE = "Extreme Test" 
+NAME="ExTest"
+ONCLICK = TeamRoom.Name(5) = "Test"
+LANGUAGE="JavaScript" >
+</P>
+
+<SCRIPT LANGUAGE="JavaScript">
+	TeamRoom.Room(0, 10, 20, 0, 10, 10)
+	TeamRoom.Name(0) = "Vertrieb"
+	TeamRoom.Room(0, 40, 40, 25, 20, 25)
+	TeamRoom.Name(1) = "Entwicklung"
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript" FOR="TeamRoom" EVENT="NewOrder(i)">
+	alert("Neue Bestellung in Team " + TeamRoom.Name(i))
+</SCRIPT>
+
+
+</BODY>
+</HTML>

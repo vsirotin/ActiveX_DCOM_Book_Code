@@ -1,0 +1,63 @@
+#include <olectl.h>
+// AxDATLCircuit.idl : IDL source for AxDATLCircuit.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (AxDATLCircuit.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+	
+
+	[
+		object,
+		uuid(90BB18C1-EF5E-11D1-B890-E90CF092812B),
+		dual,
+		helpstring("IIntCircuitCtl Interface"),
+		pointer_default(unique)
+	]
+	interface IIntCircuitCtl : IDispatch
+	{
+		[propput, id(DISPID_BACKCOLOR)]
+		HRESULT BackColor([in]OLE_COLOR clr);
+		[propget, id(DISPID_BACKCOLOR)]
+		HRESULT BackColor([out,retval]OLE_COLOR* pclr);
+		[propget, id(1), helpstring("property IsStockOK")] HRESULT IsStockOK([out, retval] BOOL *pVal);
+		[id(2), helpstring("method Count")] HRESULT Count([in] BSTR bstrName, [out, retval] short* sCount);
+		[propget, id(3), helpstring("property CountByIndex")] HRESULT CountByIndex([in] short sIndex, [out, retval] short *pVal);
+		[propput, id(3), helpstring("property CountByIndex")] HRESULT CountByIndex([in] short sIndex, [in] short newVal);
+	};
+[
+	uuid(17EEE381-EDCF-11D1-B890-F8ED05E1952C),
+	version(1.0),
+	helpstring("AxDATLCircuit 1.0 Type Library")
+]
+library AXDATLCIRCUITLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(844AE600-F2F7-11d1-B890-BD996E57C329),
+		helpstring("Ereignsschnittstelle für IntCircuitCtl")
+
+	]
+	dispinterface _IntCircuitCtlEvents
+	{
+	properties:
+	methods:
+	[id(1)] void NewOrder([in] BSTR bstrName);
+	};
+
+
+	[
+		uuid(90BB18C2-EF5E-11D1-B890-E90CF092812B),
+		helpstring("IntCircuitCtl Class")
+	]
+	coclass IntCircuitCtl
+	{
+		[default] interface IIntCircuitCtl;
+		[default, source] dispinterface _IntCircuitCtlEvents;
+	};
+};

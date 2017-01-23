@@ -1,0 +1,81 @@
+// TeamRoom.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (TeamRoom.tlb) that will become a resource in
+// TeamRoom.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(D2DF0E63-DC6B-11D1-B890-83B4B7F80022), version(3.0),
+  helpfile("TeamRoom.hlp"),
+  helpstring("TeamRoom ActiveX Control module"),
+  control ]
+library TEAMROOMLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CTeamRoomCtrl
+
+	[ uuid(D2DF0E64-DC6B-11D1-B890-83B4B7F80022),
+	  helpstring("Dispatch interface for TeamRoom Control"), hidden ]
+	dispinterface _DTeamRoom
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CTeamRoomCtrl)
+			[id(DISPID_FONT), bindable] IFontDisp* Font;
+			[id(1)] long Area;
+			[id(2)] short CountRoom;
+			[id(3)] short CountOrderAll;
+			[id(4)] float SumOrderAll;
+			[id(5)] BSTR InfoOrderAll;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CTeamRoomCtrl)
+			[id(6)] boolean Room(short x0, short y0, short x1, short y1, short xDoor, short yDoor);
+			[id(7), propget] BSTR Name(short sIndex);
+			[id(7), propput] void Name(short sIndex, BSTR lpszNewValue);
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CTeamRoomCtrl
+
+	[ uuid(D2DF0E65-DC6B-11D1-B890-83B4B7F80022),
+	  helpstring("Event interface for TeamRoom Control") ]
+	dispinterface _DTeamRoomEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CTeamRoomCtrl)
+			[id(DISPID_ERROREVENT)] void Error(short Number, BSTR* Description, long Scode, BSTR Source, BSTR HelpFile, long HelpContext, boolean* CancelDisplay);
+			[id(1)] void NewOrder(short sIndex);
+			[id(2)] void ClickInRoom(BSTR lpstrName);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CTeamRoomCtrl
+
+	[ uuid(D2DF0E66-DC6B-11D1-B890-83B4B7F80022),
+	  helpstring("TeamRoom Control"), control ]
+	coclass TeamRoom
+	{
+		[default] dispinterface _DTeamRoom;
+		[default, source] dispinterface _DTeamRoomEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

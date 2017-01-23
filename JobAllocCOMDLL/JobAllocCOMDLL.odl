@@ -1,0 +1,15 @@
+// JobAllocCOMDLL.odl : type library source for JobAllocCOMDLL.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (JobAllocCOMDLL.tlb).
+
+[ uuid(88A3F9F6-A12F-11D1-A259-00A0C941DD59), version(1.0) ]
+library JobAllocCOMDLL
+{
+	importlib("stdole32.tlb");
+	
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

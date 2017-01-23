@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TaskManager - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x407 /fo"Debug/TaskManager.res" /d "_DEBUG" "C:\Vcpp\AxD\Kap2\TaskManager\TaskManager.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP21C1.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/TaskManager.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\Kap2\TaskManager\MainFrm.cpp"
+"C:\Vcpp\AxD\Kap2\TaskManager\ReasonDlg.cpp"
+"C:\Vcpp\AxD\Kap2\TaskManager\TaskManager.cpp"
+"C:\Vcpp\AxD\Kap2\TaskManager\TaskManagerDoc.cpp"
+"C:\Vcpp\AxD\Kap2\TaskManager\TaskManagerView.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP21C1.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP21C2.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/TaskManager.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\Kap2\TaskManager\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP21C2.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP21C3.TMP" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/TaskManager.pdb" /debug /machine:I386 /out:"Debug/TaskManager.exe" /pdbtype:sept 
+.\Debug\MainFrm.obj
+.\Debug\ReasonDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\TaskManager.obj
+.\Debug\TaskManagerDoc.obj
+.\Debug\TaskManagerView.obj
+.\Debug\TaskManager.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP21C3.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MainFrm.cpp
+ReasonDlg.cpp
+TaskManager.cpp
+TaskManagerDoc.cpp
+TaskManagerView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+TaskManager.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,51 @@
+// DCOMShareServer.idl : IDL source for DCOMShareServer.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DCOMShareServer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+	[
+		object,
+		uuid(0233BB0E-0FA9-11D2-B890-B449FDDB065F),
+		dual,
+		helpstring("IDCOMShareObj Interface"),
+		pointer_default(unique)
+	]
+	interface IDCOMShareObj : IDispatch
+	{
+		[id(1), helpstring("method AddValue")] HRESULT AddValue(void);
+	};
+	[
+		object,
+		uuid(19443040-112F-11d2-B890-B01ED0509830),
+		dual,
+		helpstring("IDCOMShareEvents Interface"),
+		pointer_default(unique)
+	]
+	interface IDCOMShareEvents : IDispatch
+	{
+		[id(1), helpstring("method UpdateState")] HRESULT UpdateState([in] long lTransNumb);
+	};
+[
+	uuid(0233BB01-0FA9-11D2-B890-B449FDDB065F),
+	version(1.0),
+	helpstring("DCOMShareServer 1.0 Type Library") 
+]
+library DCOMSHARESERVERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(0233BB0F-0FA9-11D2-B890-B449FDDB065F),
+		helpstring("DCOMShareObj Class")
+	]
+	coclass DCOMShareObj
+	{
+		[default] interface IDCOMShareObj;
+		[default, source] interface IDCOMShareEvents;
+	};
+};

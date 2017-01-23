@@ -1,0 +1,52 @@
+--------------------Configuration: TeamRoom - Win32 Debug--------------------
+Begining build with project "C:\Vcpp\AxD\P7\TeamRoom3\TeamRoom.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fp"Debug/TeamRoom.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x407 /fo"Debug/TeamRoom.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/TeamRoom.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/TeamRoom.pdb" /debug /machine:I386 /def:".\TeamRoom.def" /out:"Debug/TeamRoom.ocx" /implib:"Debug/TeamRoom.lib" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "Debug/TeamRoom.tlb" /mktyplib203 /o NUL /win32 "C:\Vcpp\AxD\P7\TeamRoom3\TeamRoom.odl"" 
+Creating command line "rc.exe /l 0x407 /fo"Debug/TeamRoom.res" /i "Debug" /d "_DEBUG" /d "_AFXDLL" "C:\Vcpp\AxD\P7\TeamRoom3\TeamRoom.rc"" 
+Creating temp file "C:\WINDOWS\TEMP\RSPC362.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fp"Debug/TeamRoom.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\P7\TeamRoom3\TeamRoom.cpp"
+"C:\Vcpp\AxD\P7\TeamRoom3\TeamRoomCtl.cpp"
+>
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPC362.TMP" 
+Creating temp file "C:\WINDOWS\TEMP\RSPC363.TMP" with contents </nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/TeamRoom.pdb" /debug /machine:I386 /def:".\TeamRoom.def" /out:"Debug/TeamRoom.ocx" /implib:"Debug/TeamRoom.lib" /pdbtype:sept 
+.\Debug\OrderDlg.obj
+.\Debug\Room.obj
+.\Debug\StdAfx.obj
+.\Debug\TeamRoom.obj
+.\Debug\TeamRoomCtl.obj
+.\Debug\TeamRoomDetails.obj
+.\Debug\TeamRoomPpg.obj
+.\Debug\TeamRoom.res>
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPC363.TMP" 
+Creating temp file "C:\WINDOWS\TEMP\RSPC364.BAT" with contents <@echo off
+regsvr32 /s /c ".\Debug\TeamRoom.ocx"
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+>
+Creating command line "C:\WINDOWS\TEMP\RSPC364.BAT" 
+Creating Type Library...
+TeamRoom.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+TeamRoom.cpp
+TeamRoomCtl.cpp
+Generating Code...
+Linking...
+Registering ActiveX Control...
+
+
+
+TeamRoom.ocx - 0 error(s), 0 warning(s)

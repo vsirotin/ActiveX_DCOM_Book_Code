@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ShareClient - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x407 /fo"Debug/ShareClient.res" /d "_DEBUG" "C:\Vcpp\AxD\P9\ShareClient\ShareClient.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP21A4.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WIN32_DCOM" /Fp"Debug/ShareClient.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\P9\ShareClient\CompNameDlg.cpp"
+"C:\Vcpp\AxD\P9\ShareClient\ShareClient.cpp"
+"C:\Vcpp\AxD\P9\ShareClient\ShareClientDlg.cpp"
+"C:\Vcpp\AxD\P9\ShareClient\ShareEvents.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP21A4.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP21A5.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WIN32_DCOM" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\P9\ShareClient\DCOMShareServer_i.c"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP21A5.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP21A6.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WIN32_DCOM" /Fp"Debug/ShareClient.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\P9\ShareClient\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP21A6.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP21A7.TMP" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ShareClient.pdb" /debug /machine:I386 /out:"Debug/ShareClient.exe" /pdbtype:sept 
+.\Debug\CompNameDlg.obj
+.\Debug\DCOMShareServer_i.obj
+.\Debug\ShareClient.obj
+.\Debug\ShareClientDlg.obj
+.\Debug\ShareEvents.obj
+.\Debug\StdAfx.obj
+.\Debug\ShareClient.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP21A7.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CompNameDlg.cpp
+ShareClient.cpp
+ShareClientDlg.cpp
+ShareEvents.cpp
+Generating Code...
+Compiling...
+DCOMShareServer_i.c
+Linking...
+
+
+
+<h3>Results</h3>
+ShareClient.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

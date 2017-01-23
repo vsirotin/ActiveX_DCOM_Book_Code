@@ -1,0 +1,30 @@
+--------------------Configuration: DCOMShareServerps - Win32 Debug--------------------
+
+
+Microsoft (R) Program Maintenance Utility   Version 1.62.7022
+Copyright (C) Microsoft Corp 1988-1997. All rights reserved.
+
+ cl /c /Ox /DWIN32 /D_WIN32_WINNT=0x0400 /DREGISTER_PROXY_DLL dlldata.c
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 11.00.7022 for 80x86
+Copyright (C) Microsoft Corp 1984-1997. All rights reserved.
+
+dlldata.c
+ cl /c /Ox /DWIN32 /D_WIN32_WINNT=0x0400 /DREGISTER_PROXY_DLL DCOMShareServer_p.c
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 11.00.7022 for 80x86
+Copyright (C) Microsoft Corp 1984-1997. All rights reserved.
+
+DCOMShareServer_p.c
+ cl /c /Ox /DWIN32 /D_WIN32_WINNT=0x0400 /DREGISTER_PROXY_DLL DCOMShareServer_i.c
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 11.00.7022 for 80x86
+Copyright (C) Microsoft Corp 1984-1997. All rights reserved.
+
+DCOMShareServer_i.c
+ link /dll /out:DCOMShareServerps.dll /def:DCOMShareServerps.def /entry:DllMain dlldata.obj DCOMShareServer_p.obj DCOMShareServer_i.obj kernel32.lib rpcndr.lib rpcns4.lib rpcrt4.lib oleaut32.lib uuid.lib
+Microsoft (R) 32-Bit Incremental Linker Version 5.10.7303
+Copyright (C) Microsoft Corp 1992-1997. All rights reserved.
+
+   Creating library DCOMShareServerps.lib and object DCOMShareServerps.exp
+
+
+
+DCOMShareServerps.exe - 0 error(s), 0 warning(s)

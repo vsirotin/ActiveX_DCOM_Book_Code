@@ -1,0 +1,22 @@
+HKCR
+{
+	DCOMShareObj.DCOMShareObj.1 = s 'DCOMShareObj Class'
+	{
+		CLSID = s '{0233BB0F-0FA9-11D2-B890-B449FDDB065F}'
+	}
+	DCOMShareObj.DCOMShareObj = s 'DCOMShareObj Class'
+	{
+		CurVer = s 'DCOMShareObj.DCOMShareObj.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0233BB0F-0FA9-11D2-B890-B449FDDB065F} = s 'DCOMShareObj Class'
+		{
+			ProgID = s 'DCOMShareObj.DCOMShareObj.1'
+			VersionIndependentProgID = s 'DCOMShareObj.DCOMShareObj'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{0233BB02-0FA9-11D2-B890-B449FDDB065F}'
+		}
+	}
+}

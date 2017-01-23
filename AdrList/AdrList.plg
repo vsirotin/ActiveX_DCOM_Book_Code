@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AdrList - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "Debug/AdrList.tlb" /mktyplib203 /o "NUL" /win32 "C:\Vcpp\AxD\Kap4\AdrList\AdrList.odl""
+Creating command line "rc.exe /l 0x407 /fo"Debug/AdrList.res" /i "Debug" /d "_DEBUG" /d "_AFXDLL" "C:\Vcpp\AxD\Kap4\AdrList\AdrList.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP21A1.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/AdrList.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\Kap4\AdrList\AdrList.cpp"
+"C:\Vcpp\AxD\Kap4\AdrList\AdrListDoc.cpp"
+"C:\Vcpp\AxD\Kap4\AdrList\AdrListView.cpp"
+"C:\Vcpp\AxD\Kap4\AdrList\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP21A1.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP21A2.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/AdrList.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Vcpp\AxD\Kap4\AdrList\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP21A2.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP21A3.TMP" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/AdrList.pdb" /debug /machine:I386 /out:"Debug/AdrList.exe" /pdbtype:sept 
+.\Debug\AdrList.obj
+.\Debug\AdrListDoc.obj
+.\Debug\AdrListView.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\AdrList.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP21A3.TMP"
+<h3>Output Window</h3>
+Creating Type Library...
+AdrList.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AdrList.cpp
+AdrListDoc.cpp
+AdrListView.cpp
+MainFrm.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+AdrList.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

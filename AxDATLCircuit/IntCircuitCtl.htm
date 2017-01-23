@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<TITLE>ATL 2.0 test page for object IntCircuitCtl</TITLE>
+</HEAD>
+<BODY>
+<OBJECT ID="IntCircuitCtl" <
+ CLASSID="CLSID:90BB18C2-EF5E-11D1-B890-E90CF092812B">
+>
+</OBJECT>
+
+<SCRIPT LANGUAGE="VBScript">
+Sub IntCircuitCtl_NewOrder(strName)
+	alert "Neue Bestellung von "&strName
+	Count = IntCircuitCtl.Count(strName)
+	alert Count
+End Sub
+
+</SCRIPT>
+</BODY>
+</HTML>

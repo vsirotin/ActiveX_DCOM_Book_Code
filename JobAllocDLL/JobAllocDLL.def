@@ -1,0 +1,7 @@
+; JobAllocDLL.def : Declares the module parameters for the DLL.
+
+LIBRARY      "JobAllocDLL"
+DESCRIPTION  'JobAllocDLL Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,71 @@
+// AxDMFCControlFirst.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (AxDMFCControlFirst.tlb) that will become a resource in
+// AxDMFCControlFirst.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(BD7B05FA-D5DD-11D1-B890-B52A27C48724), version(1.0),
+  helpfile("AxDMFCControlFirst.hlp"),
+  helpstring("AxDMFCControlFirst ActiveX Control module"),
+  control ]
+library AXDMFCCONTROLFIRSTLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CAxDMFCControlFirstCtrl
+
+	[ uuid(BD7B05FB-D5DD-11D1-B890-B52A27C48724),
+	  helpstring("Dispatch interface for AxDMFCControlFirst Control"), hidden ]
+	dispinterface _DAxDMFCControlFirst
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CAxDMFCControlFirstCtrl)
+			[id(1)] short xRes;
+			[id(2)] short yRes;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CAxDMFCControlFirstCtrl)
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CAxDMFCControlFirstCtrl
+
+	[ uuid(BD7B05FC-D5DD-11D1-B890-B52A27C48724),
+	  helpstring("Event interface for AxDMFCControlFirst Control") ]
+	dispinterface _DAxDMFCControlFirstEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CAxDMFCControlFirstCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CAxDMFCControlFirstCtrl
+
+	[ uuid(BD7B05FD-D5DD-11D1-B890-B52A27C48724),
+	  helpstring("AxDMFCControlFirst Control"), control ]
+	coclass AxDMFCControlFirst
+	{
+		[default] dispinterface _DAxDMFCControlFirst;
+		[default, source] dispinterface _DAxDMFCControlFirstEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

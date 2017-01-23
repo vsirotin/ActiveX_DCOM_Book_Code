@@ -1,0 +1,35 @@
+HKCR
+{
+	IntCircuitCtl.IntCircuitCtl.1 = s 'IntCircuitCtl Class'
+	{
+		CLSID = s '{90BB18C2-EF5E-11D1-B890-E90CF092812B}'
+		'Insertable'
+	}
+	IntCircuitCtl.IntCircuitCtl = s 'IntCircuitCtl Class'
+	{
+		CurVer = s 'IntCircuitCtl.IntCircuitCtl.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {90BB18C2-EF5E-11D1-B890-E90CF092812B} = s 'IntCircuitCtl Class'
+		{
+			ProgID = s 'IntCircuitCtl.IntCircuitCtl.1'
+			VersionIndependentProgID = s 'IntCircuitCtl.IntCircuitCtl'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'Programmable'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 1'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{17EEE381-EDCF-11D1-B890-F8ED05E1952C}'
+			'Version' = s '1.0'
+		}
+	}
+}

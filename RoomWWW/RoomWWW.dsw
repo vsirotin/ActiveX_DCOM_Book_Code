@@ -1,0 +1,31 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "RoomWWW"=.\RoomWWW.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+    {D2DF0E66-DC6B-11D1-B890-83B4B7F80022}
+    {8856F961-340A-11D0-A96B-00C04FD705A2}
+}}}
+
+###############################################################################
+
